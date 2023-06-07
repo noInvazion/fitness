@@ -1,5 +1,5 @@
 body {
-    background: url(../img/guy_gym2.jpg);
+background: url(../img/guy_gym2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
@@ -18,7 +18,7 @@ body {
   header {
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: orangered3px solid;
+    /* border-bottom: orangered3px solid; */
   }
   
   header li {
@@ -43,15 +43,21 @@ body {
     float: left;
   }
 
-    header nav {
-      float: left;
-    }
-
     header #nav_bar {
+      margin: 0;
       padding:0 20px 0 20px ;
+      display: flex;
+      float: left;
+      margin-top: 10px;
+      align-items: center;
     }
 
+    header nav li {
+      margin-right: 10px;
+    }
 
-   
-
-
+    header nav img {
+      width: 30px;
+      height: 30px;
+      vertical-align: middle;
+    }
