@@ -1,0 +1,57 @@
+body {
+    background: url(../img/guy_gym2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  /* Global styles */
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  header {
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: orangered3px solid;
+  }
+  
+  header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+    list-style-type: none;
+    font-weight: 700;
+  }
+
+  header nav a {
+    text-decoration: none;
+    color: white;
+  }
+
+  header ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  header #branding {
+    float: left;
+  }
+
+    header nav {
+      float: left;
+    }
+
+    header #nav_bar {
+      padding:0 20px 0 20px ;
+    }
+
+
+   
+
+
