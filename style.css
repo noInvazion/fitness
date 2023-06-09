@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(39, 37, 37);
+    background-color: rgb(39, 37, 37);
     margin: 0;
     padding: 0;
     font-size: 14px;
@@ -14,7 +14,8 @@ body {
   }
 
   header {
-    background: url(../img/guy_gym2.jpg) 100% ;
+    background: url(../img/guy_gym2.jpg) 100%;
+    /* add grey overlay */
     background-size:cover;
     background-repeat:no-repeat;
     width: 100%;
@@ -32,6 +33,10 @@ body {
     list-style-type: none;
     font-weight: 700;
   }
+
+  /* header #branding img,header nav {
+    position: fixed;
+  } */
 
   header nav a {
     text-decoration: none;
@@ -107,4 +112,71 @@ body {
       background-color: orangered;
       color:white;
       border:none;           
+      }
+
+      #classes {
+        position: relative;
+        /* width: 50%; */
+        color: white;
+        padding-top: 1050px;
+        padding-left: 50%;
+        text-transform: uppercase;
+      }
+
+      #classes p {
+        position: absolute;
+        display: inline;
+        color: #eb5a0b;
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .love{
+        /* position: relative; */
+        font-family: Arial, Helvetica, sans-serif;
+        color: aliceblue;
+        padding-top: 40px ;
+        padding-left: 15%;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      
+      .love h2 {
+        font-size: 35px;
+      }
+
+      figure{
+        padding-top: 40px;
+        margin-right: 70px;
+        padding: 0;
+      }
+
+      .picture{
+        padding-top: 0px;
+        display: inline;
+        margin-left: 150px;
+      }
+
+      .text{
+        position: relative;
+        bottom: 10px;
+        margin: 0;
+        background-color: rgb(33, 32, 32);
+        padding-left: 20px;
+        width: 390px;
+        height: 50px;
+        color: #eb5a0b;
+        margin-left: 150px;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-align: left;
+      }
+
+      .sub_text{
+        position: relative;
+      }
+
+      #color_change {
+        color: white;
+        font-size: 20px;
       }
