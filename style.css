@@ -1,11 +1,9 @@
 body {
-background: url(../img/guy_gym2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-color: rgb(39, 37, 37);
     margin: 0;
     padding: 0;
     font-size: 14px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Poppins';
   }
 
   /* Global styles */
@@ -16,6 +14,12 @@ background: url(../img/guy_gym2.jpg);
   }
 
   header {
+    background: url(../img/guy_gym2.jpg) 100% ;
+    background-size:cover;
+    background-repeat:no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
     padding-top: 30px;
     min-height: 70px;
     /* border-bottom: orangered3px solid; */
@@ -33,6 +37,12 @@ background: url(../img/guy_gym2.jpg);
     text-decoration: none;
     color: white;
   }
+
+  header nav a:hover{
+    color:orangered;
+    text-decoration:line-through;
+    cursor:pointer;
+} 
 
   header ul {
     margin: 0;
@@ -61,3 +71,40 @@ background: url(../img/guy_gym2.jpg);
       height: 30px;
       vertical-align: middle;
     }
+
+    /* SHOWCASE */
+    #showcase{
+      min-height: 400px;
+      text-align: center;
+      margin-top: 300px;
+      color: white;
+      text-transform: uppercase;
+      margin-left: 1000px;
+      text-align: left;
+    }
+
+    header #showcase p{
+      margin-top: 200px;
+      font-size: 30px;
+      letter-spacing: 10px;
+      font-weight: bolder;
+    }
+
+    header #showcase h1{
+      padding-top: 10px;
+      font-size: 70px;
+    }
+
+    #change_color {
+      color: #eb5a0b;
+    }
+
+    button{
+      left: 1180px;
+      top:25px;
+      width:150px;
+      height:60px;
+      background-color: orangered;
+      color:white;
+      border:none;           
+      }
