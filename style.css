@@ -20,13 +20,15 @@ body {
     background-repeat:no-repeat;
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: relative;
     padding-top: 30px;
+    padding-bottom: 350px;
     min-height: 70px;
     /* border-bottom: orangered3px solid; */
   }
   
   header li {
+    position: relative;
     float: left;
     display: inline;
     padding: 0 20px 0 20px;
@@ -39,15 +41,17 @@ body {
   } */
 
   header nav a {
+    position: relative;
     text-decoration: none;
     color: white;
+    transition: orange ease-in-out 0.3s;
   }
 
   header nav a:hover{
     color:orangered;
     text-decoration:line-through;
     cursor:pointer;
-} 
+}
 
   header ul {
     margin: 0;
@@ -118,7 +122,7 @@ body {
         position: relative;
         /* width: 50%; */
         color: white;
-        padding-top: 1050px;
+        /* padding-top: 550px; */
         padding-left: 50%;
         text-transform: uppercase;
       }
@@ -136,14 +140,16 @@ body {
         font-family: Arial, Helvetica, sans-serif;
         color: aliceblue;
         padding-top: 40px ;
-        padding-left: 15%;
+        padding-left: 7%;
         text-transform: uppercase;
         text-align: center;
+        font-size: 25px;
       }
       
-      .love h2 {
+      /* .love h2 {
         font-size: 35px;
-      }
+        padding-left: 10px;
+      } */
 
       figure{
         padding-top: 40px;
@@ -157,7 +163,7 @@ body {
         margin-left: 150px;
       }
 
-      .text{
+      .text2{
         position: relative;
         bottom: 10px;
         margin: 0;
@@ -179,4 +185,89 @@ body {
       #color_change {
         color: white;
         font-size: 20px;
+      }
+
+      .seperate {
+        float: left;
+        margin: auto;
+        padding: 10px;
+      }
+
+      .seperate2 {
+        float: left;
+        padding-left: 250px;
+      }
+
+      /* titi's css */
+
+      #bottomframe1 p {
+        text-align: center;
+        margin: 0;
+        color: #eb5a0b;
+        font-weight: 800;
+      }
+
+      #bottomframe1 h2 {
+        color: whitesmoke;
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 30px;
+      }
+
+      button.info{
+        left: 1180px;
+        top:20px;
+        width:150px;
+        height:60px;
+        border-radius: 7px;
+        background-color: #eb5a0b;
+        color:white;
+        border:none;  
+        margin-left:10px;      
+      }
+      #bottomframe1{
+        position:relative;
+        background-color: rgb(15, 15, 15);
+        width:100%;
+        height:300px;
+        padding-left :30px;
+        padding-bottom: 250px;
+        font-family:Verdana, Tahoma, sans-serif; 
+      }
+      .iconbox button{
+        border: none;
+        border-radius:50%;
+        width:70px;
+        height:70px;
+        background-color: whitesmoke;
+        margin-right:100px;
+        margin-left:100px;
+      }
+      .iconbox button:hover{
+        background-color:#eb5a0b;
+      }
+      .iconbox{
+        width:260px;
+        height:200px;
+        float:left;
+        background-color: none;
+        border-radius:8px;
+        margin-left: 150px;
+        padding:8px;
+        border:3px; 
+      }
+
+      .iconbox img{
+          color:black;
+          width:40px;
+          height:40px;
+      }
+
+
+      #bottomframe1 .iconbox p{
+        font-family: Arial, sans-serif;
+        text-align: center;
+        font-size: 12px;
+        color: #707070;
+        padding: 2px;
       }
