@@ -2,15 +2,18 @@ body {
     background-color: rgb(39, 37, 37);
     margin: 0;
     padding: 0;
+    /* width: 100%;
+    height: 100%; */
     font-size: 14px;
     font-family: 'Poppins';
+    overflow-x: hidden;
   }
 
   /* Global styles */
   .container {
     width: 80%;
-    margin: auto;
-    overflow: hidden;
+    margin:0;
+    overflow:hidden;
   }
 
   header {
@@ -18,13 +21,10 @@ body {
     /* add grey overlay */
     background-size:cover;
     background-repeat:no-repeat;
-    width: 100%;
-    height: 100%;
     position: relative;
     padding-top: 30px;
     padding-bottom: 350px;
     min-height: 70px;
-    /* border-bottom: orangered3px solid; */
   }
   
   header li {
@@ -36,21 +36,18 @@ body {
     font-weight: 700;
   }
 
-  /* header #branding img,header nav {
-    position: fixed;
-  } */
 
   header nav a {
     position: relative;
     text-decoration: none;
     color: white;
-    transition: orange ease-in-out 0.3s;
   }
 
   header nav a:hover{
     color:orangered;
     text-decoration:line-through;
     cursor:pointer;
+    /* transition:  orange 0.5s ease-in-out; */
 }
 
   header ul {
@@ -60,6 +57,7 @@ body {
 
   header #branding {
     float: left;
+    padding-left: 18%;
   }
 
     header #nav_bar {
@@ -108,9 +106,7 @@ body {
       color: #eb5a0b;
     }
 
-    button{
-      left: 1180px;
-      top:25px;
+    #showcase button{
       width:150px;
       height:60px;
       background-color: orangered;
@@ -118,38 +114,112 @@ body {
       border:none;           
       }
 
+      /* end of showcase */
+
+      /* bottomframe1 */
+
+      #bottomframe1 p {
+        text-align: center;
+        margin: 0;
+        color: #eb5a0b;
+        font-weight: 800;
+      }
+
+      #bottomframe1 h2 {
+        color: whitesmoke;
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 30px;
+      }
+
+      button.info{
+        left: 1180px;
+        top:20px;
+        width:150px;
+        height:60px;
+        border-radius: 7px;
+        background-color: #eb5a0b;
+        color:white;
+        border:none;  
+        margin-left:10px;      
+      }
+      #bottomframe1{
+        position:relative;
+        background-color: rgb(15, 15, 15);
+        width:100%;
+        height:300px;
+        padding-left :30px;
+        padding-bottom: 310px;
+        font-family:Verdana, Tahoma, sans-serif; 
+      }
+      .iconbox button{
+        border: none;
+        border-radius:50%;
+        width:70px;
+        height:70px;
+        background-color: whitesmoke;
+        margin-right:100px;
+        margin-left:100px;
+      }
+      .iconbox button:hover{
+        background-color:#eb5a0b;
+      }
+      .iconbox{
+        width:260px;
+        height:200px;
+        float:left;
+        background-color: none;
+        border-radius:8px;
+        margin-left: 150px;
+        padding:8px;
+        border:3px; 
+      }
+
+      .iconbox img{
+          color:black;
+          width:40px;
+          height:40px;
+      }
+
+
+      #bottomframe1 .iconbox p{
+        font-family: Arial, sans-serif;
+        text-align: center;
+        font-size: 12px;
+        color: #707070;
+        padding: 2px;
+      }
+
+      /* end of bottomframe1 */
+
+      /* classes */
+
       #classes {
         position: relative;
         /* width: 50%; */
         color: white;
-        /* padding-top: 550px; */
+        padding-top: 100px;
         padding-left: 50%;
         text-transform: uppercase;
       }
 
       #classes p {
-        position: absolute;
         display: inline;
         color: #eb5a0b;
         font-size: 20px;
-        font-weight: 600;
+        font-weight: 550;
+        font-family:Verdana, Tahoma, sans-serif;
       }
 
-      .love{
+      .love h2{
         /* position: relative; */
         font-family: Arial, Helvetica, sans-serif;
-        color: aliceblue;
-        padding-top: 40px ;
+        color: whitesmoke;
         padding-left: 7%;
         text-transform: uppercase;
         text-align: center;
         font-size: 25px;
       }
-      
-      /* .love h2 {
-        font-size: 35px;
-        padding-left: 10px;
-      } */
 
       figure{
         padding-top: 40px;
@@ -198,76 +268,110 @@ body {
         padding-left: 250px;
       }
 
-      /* titi's css */
+      /* end of classes */
 
-      #bottomframe1 p {
-        text-align: center;
-        margin: 0;
-        color: #eb5a0b;
-        font-weight: 800;
+      /* register */
+
+      #register {
+        position: relative;
+        display: flex;
+        padding-top: 100px;
+        /* padding-left: 10%; */
+        width: 100%;
+        /* height: 100%; */
+        /* padding-bottom: 3000px; */
+        text-transform: uppercase;
+        z-index: 1;
       }
 
-      #bottomframe1 h2 {
-        color: whitesmoke;
+      #register_text {
+        position: absolute;
+        text-transform: uppercase;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         text-align: center;
-        font-size: 25px;
-        margin-bottom: 30px;
+        color: white;
       }
 
-      button.info{
-        left: 1180px;
-        top:20px;
-        width:150px;
+      #register_text h2{
+        font-size: 55px;
+      }
+
+      #register_text p{
+        font-size: 20px;
+        font-weight: 600;
+        color: #c9c5c5;
+      }/* change color */
+
+      #register_text button, #trainers button {
+        margin-top: 30px;
+        width: 200px;
         height:60px;
-        border-radius: 7px;
+        color: white;
+        font-size: 15px;
+        border:  2px solid #eb5a0b;
+        background-color: transparent;
+      }
+
+      #register_text button:hover {
         background-color: #eb5a0b;
-        color:white;
-        border:none;  
-        margin-left:10px;      
-      }
-      #bottomframe1{
-        position:relative;
-        background-color: rgb(15, 15, 15);
-        width:100%;
-        height:300px;
-        padding-left :30px;
-        padding-bottom: 250px;
-        font-family:Verdana, Tahoma, sans-serif; 
-      }
-      .iconbox button{
-        border: none;
-        border-radius:50%;
-        width:70px;
-        height:70px;
-        background-color: whitesmoke;
-        margin-right:100px;
-        margin-left:100px;
-      }
-      .iconbox button:hover{
-        background-color:#eb5a0b;
-      }
-      .iconbox{
-        width:260px;
-        height:200px;
-        float:left;
-        background-color: none;
-        border-radius:8px;
-        margin-left: 150px;
-        padding:8px;
-        border:3px; 
+        transition: 1s ease-in-out;
       }
 
-      .iconbox img{
-          color:black;
-          width:40px;
-          height:40px;
+      /* end of register */
+
+      #trainers {
+        padding-top: 100px;
+        text-transform: uppercase;
+        margin-left: 20%;
       }
 
+      #trainers p{
+        color: #eb5a0b;
+        font-weight: 600;
+        font-size: 20px;
+      }
 
-      #bottomframe1 .iconbox p{
-        font-family: Arial, sans-serif;
-        text-align: center;
-        font-size: 12px;
-        color: #707070;
-        padding: 2px;
+      #trainers h2{
+        color: whitesmoke;
+        font-weight: 600;
+        font-size: 30px;
+        float: left;
+        padding-right: 50%;
+      }
+
+      #trainers button{
+        font-weight: 600;
+      }
+
+      .trainers_images{
+        position: relative;
+        display: inline-block;
+        margin-top: 40px;
+      }
+
+      .slide{
+        width: 400px;
+        height: 400px;
+        padding: 20px;
+      }
+
+      .trainers_text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(50%, 50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        margin-left: 100px;
+        margin-top: 22%;
+        padding: 0 80px 0 20px;
+      }
+
+      .trainers_text:hover {
+        opacity: 1;
+        transition: 1s ease-in-out;
       }
