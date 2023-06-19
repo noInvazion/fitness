@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Poppins';
+    overflow-x: hidden;
+    bottom: 1000px;
+    background-color: rgba(0, 0, 0, 1 );
+  }
+
+header {
+    /* add grey overlay */
+    background-color: rgb(39, 37, 37);
+    position: relative;
+    padding-top: 30px;
+    min-height: 70px;
+  }
+  
+  header li {
+    position: relative;
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+
+  a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+  }
+
+  header .current a{
+    color: #eb5a0b;
+  }
+
+  header nav a:hover{
+    color:#eb5a0b;
+    text-decoration:line-through;
+    cursor:pointer;
+    /* transition:  orange 0.5s ease-in-out; */
+}
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  header #branding {
+    float: left;
+    padding-left: 18%;
+  }
+
+    header #nav_bar {
+      margin: 0;
+      padding:0 20px 0 20px ;
+      display: flex;
+      float: left;
+      margin-top: 10px;
+      align-items: center;
+    }
+
+    header nav li {
+      margin-right: 10px;
+    }
+
+    header nav img {
+      width: 30px;
+      height: 30px;
+      vertical-align: middle;
+    }
+
+
+.container{
+    margin-top: 20px;
+    display: flex;
+    height: auto;
+}
+
+.container #video-container{
+    margin: 0;
+    padding: 0;
+}
+
+#video-container img{
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+#right-section{
+    margin: 0;
+    padding: 0;
+}
+#right-section p{
+    color: grey;
+    font-size: 20px;
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+    
+}
+#right-section h2{
+    color:orangered;
+    font-size:20px;
+    margin: 0;
+    padding: 0;
+
+}
+#right-section h1{
+    color:beige; 
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+.video-container{
+    height: auto;
+    flex:1;
+    height: auto;
+    float:right;
+    margin: 0;
+    padding: 0;
+    margin-left:50%;
+    width:50%;
+
+}
+#right-section{
+    flex:1;
+    background-color:black;
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+    width:50%;
+}
+
+#footer2{
+    position: relative;
+    /* padding-bottom: 10px; */
+    background-color: rgba(0, 0, 0, 1 );
+    padding-top: 100px;
+    color: white;
+    overflow-y: hidden;
+  }
+  
+  #gym_info{
+    margin-left: 10%;
+    width: 20%;
+    float: left;
+    height: 100%;
+  }
+
+  #gym_info p{
+    line-height: 30px;
+  }
+
+  #gym_info .footer_logo {
+    width: 20px;
+    padding-right: 10px;
+  }
+
+  #links {
+    position: relative;
+    margin-left: 40%;
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+  }
+
+  footer a:hover{
+    cursor: pointer;
+  }
+
+  footer li{
+    list-style: none;
+    padding: 10px;
+    text-align: left;
+  }
+
+  #links2 {
+    bottom: 190px;
+    position: relative;
+    margin-left: 60%;
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+  }
+
+  #article {
+    bottom: 375px;
+    position: relative;
+    margin-left: 80%;
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    text-align: left;
+  }
+
+
+  #article ul{
+    margin: 0;
+    padding: 0;
+  }
+
+  #article li{
+    padding: 0 10px 5px 0;
+  }
+
+  #article hr{
+    color: white;
+    width: 90%;
+    margin-right: 10%;
+  }
+
+  #copyright {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  /* end of footer2 */

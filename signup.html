@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign Up</title>
+    <style>
+        body {
+            background: url(img/guy_gym3.jpg) 100% ;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            margin-top: 100px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333333;
+            margin-bottom: 30px;
+        }
+
+        .container label {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .container input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #CCCCCC;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"], form button {
+            background-color: #eb5a0b;
+            color: #FFFFFF;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        form button{
+            float: right;
+        }
+
+        form button a{
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #eb5a0b;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 20px;
+            color: #666666;
+        }
+
+        .signin-link {
+            color: #eb5a0b;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form id="signup-form" action="index.html" method="POST">
+            <input type="text" id="fullname" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <label for="show-password">
+            <input type="checkbox" id="show-password" onclick="togglePasswordVisibility()">
+                Show Password</label>
+            <input type="submit" value="Sign Up">
+            <button><a href="index.html">Home Page</a></button>
+        </form>
+        <p>Already have an account? <a class="signin-link" href="login.html">Sign In</a></p>
+    </div>
+
+    <script>
+        function togglePasswordVisibility() {
+            var passwordInput = document.getElementById("password");
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+            } else {
+                passwordInput.type = "password";
+            }
+        }
+
+        document.getElementById("signup-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            var fullname = document.getElementById("fullname").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            var validationPassed = true;
+
+            if (fullname.trim() === "") {
+                alert("Please enter your full name.");
+                validationPassed = false;
+            }
+
+            if (!validateEmail(email)) {
+                alert("Please enter a valid email address.");
+                validationPassed = false;
+            }
+
+            if (!validatePassword(password)) {
+                alert("Please enter a password with at least 8 characters, including at least one uppercase letter, one lowercase letter, and one digit.");
+                validationPassed = false;
+            }
+
+            if (validationPassed) {
+                alert("Sign up successful!");
+                window.location.href = "index.html";
+            }
+
+            
+        });
+
+        function validateEmail(email) {
+            return email.includes("@gmail.com");
+        }
+
+        function validatePassword(password) {
+            var passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).+$/;
+            return passwordRegex.test(password);
+        }
+    </script>
+</body>
+
+</html>
+

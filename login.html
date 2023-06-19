@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/login.css">
+  <style>
+    body {
+      background: url('img/guy_gym3.jpg') 100%;
+      background-repeat: no-repeat;
+    }
+
+     form #button2 button {
+        background-color: #eb5a0b;
+        color: #FFFFFF;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+        #button2{
+          padding-bottom: 100px;
+          float: right;
+        }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="login-form" action="index.html" method="POST">
+      <input type="text" name="username" id="username" placeholder="Username" autocomplete="username">
+      <br>
+      <input type="password" name="password" id="password" autocomplete="current-password" placeholder="Password">
+      <br>
+      <label>
+      <input type="checkbox" id="showPassword" onclick="togglePasswordVisibility()">
+        Show Password
+      </label>
+      <input type="submit" value="Login" onclick="validateForm(event)">
+      <div id="button2">
+        <button>Home Page</button>
+      </div>
+
+    </form>
+    <div class="switch">
+      <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+  </div>
+
+  <script>
+    function togglePasswordVisibility() {
+      var passwordInput = document.getElementById("password");
+
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+      } else {
+        passwordInput.type = "password";
+      }
+    }
+
+    function validateForm(event) {
+      event.preventDefault();
+
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      var validationPassed = true;
+
+      if (username.trim() === "") {
+        alert("Please enter your full name.");
+        validationPassed = false;
+      }
+
+      if (!validatePassword(password)) {
+        alert("Please enter a password with at least 8 characters, including at least one uppercase letter, one lowercase letter, and one digit.");
+        validationPassed = false;
+      }
+
+      if (validationPassed) {
+        // Perform further actions or submit the form
+        document.getElementById("login-form").submit();
+      }
+    }
+
+    function validatePassword(password) {
+      var passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).+$/;
+      return passwordRegex.test(password);
+    }
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,80 @@
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  .login-container {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 10%;
+    padding: 20px;
+    padding-right: 25px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .login-container label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .login-container input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  .hidden {
+    display: none;
+    
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    background-color: #eb5a0b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .switch {
+    text-align: center;
+  }
+  
+  .switch p {
+    margin-bottom: 0;
+    color: #555;
+  }
+  
+  .switch a {
+    color: #eb5a0b;
+    text-decoration: none;
+  }
+  
+  .switch a:hover {
+    text-decoration: underline;
+  }
+  

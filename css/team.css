@@ -1,0 +1,247 @@
+body{
+    font-family: sans-serif,Arial;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(39, 37, 37);
+    overflow-x: hidden;
+    }
+
+    header {
+    background: url(../img/guy_gym2.jpg);
+    background-color: rgb(39, 37, 37);
+    /* add grey overlay */
+    background-size:cover;
+    background-repeat:no-repeat;
+    position: relative;
+    padding-top: 30px;
+    min-height: 70px;
+    }
+
+    header #container{
+    background-color: rgba(39, 37, 37, 0.2);
+    width: 100%;
+    border: none;
+    position: fixed;
+    z-index: 1;
+    }
+
+    header li {
+    position: relative;
+    float: left;
+    display: inline;
+    padding: 0 20px 0 15px;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 700;
+    }
+
+
+    a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    }
+
+    /* header nav{
+    position: fixed;
+    } */
+
+    header .current a{
+    color: #eb5a0b;
+    }
+
+    header nav a:hover{
+    color:#eb5a0b;
+    text-decoration:line-through;
+    cursor:pointer;
+    /* transition:  orange 0.5s ease-in-out; */
+    }
+
+    ul {
+    margin: 0;
+    padding: 0;
+    }
+
+    header #branding {
+    float: left;
+    padding-left: 18%;
+    }
+
+    header #nav_bar {
+        margin: 0;
+        padding:0 20px 0 20px ;
+        display: flex;
+        float: left;
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    header nav li {
+        margin-right: 10px;
+    }
+
+    header nav img {
+        width: 30px;
+        height: 30px;
+        vertical-align: middle;
+    }
+
+    /* our team */
+
+    .team-section {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      
+      .team-section h2 {
+        color: #eb5a0b;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      
+      .team-section h1 {
+        color: white;
+        font-size: 36px;
+        margin-bottom: 30px;
+      }
+      
+      .image-container {
+        position: relative;
+        float: left;
+        margin: 0 20px 50px 50px;
+      }
+      
+      .image-container img {
+        width: 500px;
+        height: 700px;
+      }
+
+      /* .image-container img {
+        width: 300px;
+        height: 200px; 
+        object-fit: cover;
+      } */
+      
+      .image-container:hover .appointment-button {
+        display: inline-block;
+      }
+      
+      .appointment-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        display: none;
+        padding: 10px 20px;
+        background-color: #eb5a0b;
+        color: white;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .text{
+        background-color: whitesmoke;
+        width: 50%;
+        margin-left: 25%;
+      }
+      
+      .text h1 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 5px;
+      }
+      
+      .text p {
+        color: grey;
+        font-size: 16px;
+        margin-bottom: 0;
+      }
+
+      /* footer2 */
+
+      #footer2{
+        position: relative;
+        margin-top: 100%;
+        /* padding-bottom: 10px; */
+        background-color: rgba(0, 0, 0, 0.8);
+        padding-top: 50px;
+        color: white;
+        overflow-y: hidden;
+      }
+      
+      #gym_info{
+        margin-left: 10%;
+        width: 20%;
+        float: left;
+        height: 100%;
+      }
+
+      #gym_info p{
+        line-height: 30px;
+      }
+
+      #gym_info .footer_logo {
+        width: 20px;
+        padding-right: 10px;
+      }
+
+      #links {
+        position: relative;
+        margin-left: 40%;
+        display: flex;
+        width: 20%;
+        flex-direction: column;
+      }
+
+      footer a:hover{
+        cursor: pointer;
+      }
+
+      footer li{
+        list-style: none;
+        padding: 10px;
+        text-align: left;
+      }
+
+      #links2 {
+        bottom: 190px;
+        position: relative;
+        margin-left: 60%;
+        display: flex;
+        width: 20%;
+        flex-direction: column;
+      }
+
+      #article {
+        bottom: 375px;
+        position: relative;
+        margin-left: 80%;
+        display: flex;
+        width: 20%;
+        flex-direction: column;
+        text-align: left;
+      }
+
+
+      #article ul{
+        margin: 0;
+        padding: 0;
+      }
+
+      #article li{
+        padding: 0 10px 5px 0;
+      }
+
+      #article hr{
+        color: white;
+        width: 90%;
+        margin-right: 10%;
+      }
+
+      #copyright {
+        position: relative;
+        margin-top: 20px;
+        text-align: center;
+      }

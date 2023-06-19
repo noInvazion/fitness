@@ -3,36 +3,38 @@
 <head>
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Poppins">
-<title>24 Hour Fitness | Get Fit Today!</title>
+<title>GYM | Get Fit Today!</title>
 </head>
 <body>
     <header>
-        <div class="container">
+        <div id="colour_bg">
             <div id="branding">
                 <img src="./img/logo.png">
             </div>
             <nav>
                 <ul>
                     <div id="nav_bar">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="aboutus.html">ABOUT US</a></li>
-                    <li><a href="services.html">OUR SERVICES</a></li>
-                    <li><a href="team.html">OUR TEAM</a></li>
-                    <li><a href="other.html">OTHER</a></li>
-                    <li><a href="#">CONTACT US</a></li>
+                    <li class="current"><a href="#">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="#bottomframe1">SERVICES</a></li>
+                    <li><a href="team.html">TEAM</a></li>
+                    <li><a href="#register">APPOINTMENT</a></li>
+                    <li><a href="#footer1">CONTACT</a></li>
                     </div>
-                       <li>  <a href="http://www.instagram.com" target="_blank"><img src="img/instagram.png" id="ig"></a></li>
-                        <li><a href="http://www.youtube.com" target="_blank"> <img src="img/youtube.png" id="yt"></a></li>
-                        <li><a href="http://www.twitter.com" target="_blank"><img src="img/twitter.png" id="tw"></a></li>
-                        <li><a href="http://www.facebook.com" target="_blank"><img src="img/facebook.png" id="fb"></a></li>
+                    <div id="icon">
+                        <li>  <a href="https://instagram.com/ifitnessng?igshid=ZWQyN2ExYTkwZQ==" target="_blank"><img src="img/instagram.png" id="ig"></a></li>
+                        <li><a href="https://youtube.com/@MaxOazoMusic" target="_blank"> <img src="img/youtube.png" id="yt"></a></li>
+                        <li><a href="https://twitter.com/elonmusk?s=11&t=6LK4--oAH7QcGMGzGKFltg" target="_blank"><img src="img/twitter.png" id="tw"></a></li>
+                        <li><a href="https://www.facebook.com/ifitnessng" target="_blank"><img src="img/facebook.png" id="fb"></a></li>
+                    </div>            
                     </ul>
             </nav>            
         </div>
 
         <aside id="showcase">
-                <p>shape your body</p> <!-- change font  -->
+                <p>shape your body</p>
                 <h1>be <span id="change_color">strong</span><br>training hard</h1>
-                <button>GET INFO</button>
+                <a href="aboutus.html"><button>GET INFO</button></a>
         </aside>
     </header>
 
@@ -75,7 +77,7 @@
         </div>
     </div>
 
-    <section>
+    <section id="class_page">
         <section id="classes">
             <p>our classes</p>
         </section>
@@ -116,15 +118,15 @@
         <div id="register_text">
             <h2>register now to get more deals</h2>
             <p>where health, beauty and fitness meet.</p>
-            <button>APPOINTMENT</button>
+            <a href="team.html"><button>APPOINTMENT</button></a>
         </div>
     </section>
-
+    
     <section id="trainers">
         <p>our team</p>
         <div>
             <h2>train with experts</h2>
-            <button>APPOINTMENT</button>
+            <a href="team.html"><button>APPOINTMENT</button></a>
         </div>
         <div class="trainers_images">
             <img class="slide" src="img/trainer1.jpg">
@@ -132,14 +134,99 @@
                 <p style="color: whitesmoke;">John Wolf</p>
             </div>
             <img class="slide" src="img/trainer4.jpg">
-            <div class="trainers_text">
+            <div class="trainers_text2">
                 <p style="color: whitesmoke;">Dave Gerald</p>
             </div>
             <img class="slide" src="img/trainer3.jpg">
-            <div class="trainers_text">
+            <div class="trainers_text3">
                 <p style="color: whitesmoke;">Kate Smith</p>
             </div>
           </div>
     </section>
 
+    <footer id="footer1">
+        <div class="footer_button">
+            <button>
+                <img src="img/location.png" style="width: 50px;">
+            </button>
+            <p>15 Victoria Arobieke Street, Lekki, Lagos, Nigeria</p>
+        </div>
+        <div  class="footer_button">
+            <button>
+                <img src="img/smartphone.png" style="width: 50px;">
+            </button>
+            <p>+234 808 245 5725 <br> +234 908 134 6000</p>
+        </div>
+        <div  class="footer_button">
+            <button>
+                <img src="img/email.png" style="width: 50px;">
+            </button>
+            <p>Support: gymcenter@gmail.com</p>
+        </div>
+    </footer>
+
+    <footer id="footer2">
+        <div id="gym_info">
+            <img src="img/logo.png">
+            <p>Join us today and experience the transformative power of fitness in a welcoming and inclusive environment.</p>
+            <a href="https://www.facebook.com/ifitnessng"  target="_blank"><img src="img/facebook.png" class="footer_logo"></a>
+            <a href="https://instagram.com/ifitnessng?igshid=ZWQyN2ExYTkwZQ==" target="_blank"><img src="img/instagram.png" class="footer_logo"></a>
+            <a href="https://youtube.com/@MaxOazoMusic" target="_blank"><img src="img/youtube.png" class="footer_logo"></a>
+            <a href="https://twitter.com/elonmusk?s=11&t=6LK4--oAH7QcGMGzGKFltg"  target="_blank"><img src="img/twitter.png" class="footer_logo"></a>
+            <a href="mailto:beetommy72@gmail.com?subject=Gym Support" target="_blank"><img src="img/email.png" class="footer_logo"></a>
+        </div>
+
+        <div id="links">
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="team.html">Appointment</a></li>
+                <li><a href="#classes">Classes</a></li>
+            </ul>
+        </div>
+
+        <div id="links2">
+            <h2>Support</h2>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="testimonial.html">Reviews</a></li> 
+                <li><a href="#footer2">Contact</a></li>
+            </ul>
+        </div>
+
+        <div id="article">
+            <div id="sub_article">
+                <h2>Tips & Guides</h2>
+                <ul>
+                    <li><a href="https://www.mayoclinic.org/diseases-conditions/depression/in-depth/depression-and-exercise/art-20046495#:~:text=How%20much%20is%20enough%3F,time%20%E2%80%94%20may%20make%20a%20difference." target="_blank">
+                        Physical fitness may help prevent depression, anxiety</a></li>
+                </ul>
+                <sub>3 minutes read  | 20 Comment</sub>
+
+                <hr>
+
+                <ul style="padding-top: 10px;">
+                    <li> <a href="https://www.healthline.com/nutrition/best-exercise-for-weight-loss" target="_blank">Fitness: The best exercise to lose belly fat and tone...</a></li>
+                </ul>
+                <sub>5 minutes read  | 70 Comment</sub>
+
+            </div>
+        </div>
+
+        <div id="copyright">
+            <p>Copyright &copy;2023. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- <script type="text/javascript" src="raw.githubusercontent.com_micku7zu_vanilla-tilt.js_master_dist_vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".trainers_images"), {
+		max: 25,
+		speed: 400
+        // "max glare" : 1,
+	});
+    </script> -->
+
+    
 </body>
+</html>
